@@ -1,0 +1,8 @@
+{
+  "name": "Stillage to Energy — 3D Claymation Science Show",
+  "description": "Interactive 7-step animated science adventure for kids showing how distillery stillage transforms into biogas, thermal energy, electricity, and biomass pellets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

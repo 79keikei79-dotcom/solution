@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B1021;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.clay-stage {
+  box-shadow:
+    0 24px 60px -12px rgba(0, 0, 0, 0.7),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -6px 16px 0 rgba(0, 0, 0, 0.45);
+}
+
+.clay-btn {
+  box-shadow:
+    0 6px 0 0 rgba(0, 0, 0, 0.35),
+    inset 0 2px 2px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 140ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 0 0 rgba(0, 0, 0, 0.35),
+    inset 0 2px 3px 0 rgba(255, 255, 255, 0.45);
+}
+
+.clay-btn:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow:
+    0 2px 0 0 rgba(0, 0, 0, 0.35),
+    inset 0 2px 2px 0 rgba(255, 255, 255, 0.25);
+}
+
